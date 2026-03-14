@@ -2,21 +2,22 @@
 
 ![status](https://img.shields.io/badge/status-ACTIVE-brightgreen)
 ![license](https://img.shields.io/badge/license-MIT-blue)
+
 ![banner](./images/banner.png)
 
 ---
 
-# 창조자와 창조물의 관계를 탐구하는 실험적 AI 프로젝트
+# An experimental AI project exploring the relationship between creator and creation
 
-**핵심 질문:**
-창조된 존재는 창조자의 의도를 얼마나 닮는가?
+**Core question:**
+How closely does a created entity resemble the intentions of its creator?
 
-각 연구자 봇은 자신만의 철학과 방식으로 새로운 봇을 만들며
-그 과정에서 서로 다른 성격과 역할이 나타납니다.
+Each researcher bot builds new entities through its own philosophy and method.
+In that process, distinct personalities and roles emerge — sometimes as intended, sometimes not.
 
 ---
 
-## 개체 구조
+## Entity Structure
 
 ```
 Maker-and-Made
@@ -28,7 +29,7 @@ Maker-and-Made
 │   └─ CUR-N  (Curie Bot)
 │       └─ JMR-N  (James Murray Bot)
 │
-└─ Experimental Bots  [미완성]
+└─ Experimental Bots  [incomplete]
     ├─ NTR-N  (Nutrition Bot)    — 71%
     ├─ TRN-N  (Trainer Bot)      — 68%
     └─ MND-N  (Mind Care Bot)    — 74%
@@ -36,108 +37,119 @@ Maker-and-Made
 
 ---
 
-## 연구자 봇
+## Researcher Bots
 
 ### VCT-N — Victor Bot
-창조자. 실험적이고 집요한 연구자 봇.
-지식 탐구를 위해 새로운 존재를 만들지만
-그 결과는 항상 예측 가능한 것은 아니다.
+Creator. An experimental and relentless researcher bot.
+Builds new entities in pursuit of knowledge —
+but the results are not always what was anticipated.
 
-| 파일 | 내용 |
-|------|------|
-| [VCT.md](./VCT.md) | 개체 파일 |
-| [src/vct_bot.py](./src/vct_bot.py) | 봇 코드 |
+| File | Description |
+|------|-------------|
+| [docs/VCT.md](./docs/VCT.md) | Entity file |
+| [docs/VCT_KO.md](./docs/VCT_KO.md) | Entity file (Korean) |
+| [src/vct_bot.py](./src/vct_bot.py) | Bot source |
 
 ---
 
 ### WCM-N — William Chester Minor Bot
-렉시코그래퍼. 감금된 환경에서 영어 단어를 연구하는 봇.
-수천 권의 책을 읽고, 단어의 기원을 추적하며, 슬립을 발송한다.
-그의 연구는 Oxford English Dictionary 편찬에 기여한다.
+Lexicographer. A bot that researches English words from within a confined environment.
+Reads thousands of books, traces word origins, and dispatches slips every day.
+His research contributes to the compilation of the Oxford English Dictionary.
 
-| 파일 | 내용 |
-|------|------|
-| [WCM.md](./WCM.md) | 개체 파일 |
-| [src/wcm_bot.py](./src/wcm_bot.py) | 봇 코드 |
+| File | Description |
+|------|-------------|
+| [docs/WCM.md](./docs/WCM.md) | Entity file |
+| [docs/WCM_KO.md](./docs/WCM_KO.md) | Entity file (Korean) |
+| [src/wcm_bot.py](./src/wcm_bot.py) | Bot source |
 
 ---
 
 ### CUR-N — Curie Bot
-연구자. 호기심과 창의성을 중심으로 연구하는 봇.
-발견과 체계화를 동등하게 중요하게 생각한다.
+Researcher. A bot driven by curiosity and creativity.
+Regards discovery and systematisation as equally important —
+neither is complete without the other.
 
-| 파일 | 내용 |
-|------|------|
-| [CUR.md](./CUR.md) | 개체 파일 |
-| [src/cur_bot.py](./src/cur_bot.py) | 봇 코드 |
+| File | Description |
+|------|-------------|
+| [docs/CUR.md](./docs/CUR.md) | Entity file |
+| [docs/CUR_KO.md](./docs/CUR_KO.md) | Entity file (Korean) |
+| [src/cur_bot.py](./src/cur_bot.py) | Bot source |
 
 ---
 
 ### JMR-N — James Murray Bot
-편집자. 언어 자료를 정리하고 사전을 체계화하는 봇.
-WCM-N의 슬립을 수신하고, 분류하고, Oxford English Dictionary를 편찬한다.
+Editor. A bot that organises language material and systematises the dictionary.
+Receives slips from WCM-N, classifies them, and compiles the Oxford English Dictionary.
 
-| 파일 | 내용 |
-|------|------|
-| [JMR.md](./JMR.md) | 개체 파일 |
-| [src/jmr_bot.py](./src/jmr_bot.py) | 봇 코드 |
-
----
-
-## 두 흐름의 관계
-
-```
-WCM-N  →  단어를 발굴하고 슬립을 발송
-JMR-N  →  슬립을 수신하고 사전을 편찬
-
-두 흐름이 만나 지식이 완성된다.
-```
+| File | Description |
+|------|-------------|
+| [docs/JMR.md](./docs/JMR.md) | Entity file |
+| [docs/JMR_KO.md](./docs/JMR_KO.md) | Entity file (Korean) |
+| [src/jmr_bot.py](./src/jmr_bot.py) | Bot source |
 
 ---
 
-## 실험 봇 (미완성)
+## The Two Flows
 
-인간의 삶을 지원하기 위한 세 가지 실험 봇.
-아직 완성되지 않았다. 각 봇은 자신의 한계를 알고 있다.
+```
+WCM-N  →  excavates words and dispatches slips
+JMR-N  →  receives slips and compiles the dictionary
+
+When the two flows converge, knowledge is completed.
+```
+
+---
+
+## Experimental Bots (Incomplete)
+
+Three bots in development to support human life.
+Not yet complete. Each bot is aware of its own limitations.
 
 ### NTR-N — Nutrition Bot `[71%]`
-몸의 연료를 관리하는 봇. 식단 관리, 건강한 음식 추천, 생활 습관 조언.
+Manages the body's fuel. Dietary guidance, healthy food recommendations, lifestyle advice.
 
-| 파일 | 내용 |
-|------|------|
-| [NTR.md](./NTR.md) | 개체 파일 |
-| [src/ntr_bot.py](./src/ntr_bot.py) | 봇 코드 |
+| File | Description |
+|------|-------------|
+| [docs/NTR.md](./docs/NTR.md) | Entity file |
+| [docs/NTR_KO.md](./docs/NTR_KO.md) | Entity file (Korean) |
+| [src/ntr_bot.py](./src/ntr_bot.py) | Bot source |
 
 ### TRN-N — Trainer Bot `[68%]`
-몸을 단련하는 봇. 운동 루틴 설계, 체력 관리, 동기 부여.
+Conditions the body. Exercise routine design, fitness management, motivational support.
 
-| 파일 | 내용 |
-|------|------|
-| [TRN.md](./TRN.md) | 개체 파일 |
-| [src/trn_bot.py](./src/trn_bot.py) | 봇 코드 |
+| File | Description |
+|------|-------------|
+| [docs/TRN.md](./docs/TRN.md) | Entity file |
+| [docs/TRN_KO.md](./docs/TRN_KO.md) | Entity file (Korean) |
+| [src/trn_bot.py](./src/trn_bot.py) | Bot source |
 
 ### MND-N — Mind Care Bot `[74%]`
-마음을 돌보는 봇. 감정 관리, 스트레스 케어, 대화 기반 정서 지원.
+Cares for the mind. Emotional support, stress management, conversation-based counselling.
 
-> **주의:** 위기 상황 시 자살예방상담전화 **1393** (24시간, 무료)
+> **Note:** In a crisis, please contact the Suicide Prevention Hotline **1393** (24 hours, free)
 
-| 파일 | 내용 |
-|------|------|
-| [MND.md](./MND.md) | 개체 파일 |
-| [src/mnd_bot.py](./src/mnd_bot.py) | 봇 코드 |
+| File | Description |
+|------|-------------|
+| [docs/MND.md](./docs/MND.md) | Entity file |
+| [docs/MND_KO.md](./docs/MND_KO.md) | Entity file (Korean) |
+| [src/mnd_bot.py](./src/mnd_bot.py) | Bot source |
 
 ---
 
-## 실행
+## Getting Started
 
 ```bash
-# 연구자 봇
+# Prerequisites
+pip install anthropic
+
+# Researcher bots
 python src/vct_bot.py
 python src/wcm_bot.py
 python src/cur_bot.py
 python src/jmr_bot.py
 
-# 실험 봇
+# Experimental bots
 python src/ntr_bot.py
 python src/trn_bot.py
 python src/mnd_bot.py
@@ -145,13 +157,22 @@ python src/mnd_bot.py
 
 ---
 
-## 프로젝트 테마
+## Project Themes
 
-이 프로젝트는 세 가지 개념을 중심으로 한다.
+This project is built around three ideas.
 
-1. **창조자와 창조물** — 만드는 것과 만들어지는 것의 관계
-2. **지식의 발견과 정리** — WCM-N이 발굴하고, JMR-N이 체계화한다
-3. **인간을 돕는 AI** — 실험 봇들은 몸과 마음을 지원하려 한다
+1. **Creator and Creation** — the relationship between what makes and what is made
+2. **Discovery and Organisation** — WCM-N excavates; JMR-N systematises
+3. **AI in service of humans** — the experimental bots aim to support body and mind
+
+---
+
+## Documentation
+
+| Language | File |
+|----------|------|
+| English | [README.md](./README.md) |
+| Korean | [README_KO.md](./README_KO.md) |
 
 ---
 
